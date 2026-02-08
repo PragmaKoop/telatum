@@ -8,13 +8,11 @@ export const sharedPageComponents: SharedLayout = {
     Component.PageTitle(),
     Component.Search(),
     Component.Darkmode(),
-    // This adds your custom links at the top
     Component.DesktopOnly(Component.Links({
       links: {
         "Home": "/",
         "About": "/About",
-        // Add more here later as you grow
-      }
+      },
     })),
   ],
   afterBody: [],
