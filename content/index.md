@@ -1,5 +1,5 @@
 ---
-title: Welcome to Quartz
+title: Telatum
 ---
-# Telatum
+# Hey!
 **Navigating the turbulence.**
