@@ -4,7 +4,19 @@ import * as Component from "./quartz/components"
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
-  header: [],
+  header: [
+    Component.PageTitle(),
+    Component.Search(),
+    Component.Darkmode(),
+    // This adds your custom links at the top
+    Component.DesktopOnly(Component.Links({
+      links: {
+        "Home": "/",
+        "About": "/About",
+        // Add more here later as you grow
+      }
+    })),
+  ],
   afterBody: [],
   footer: Component.Footer({
   links: {
