@@ -28,24 +28,24 @@ const config: QuartzConfig = {
       },
       colors: {
         lightMode: {
-          light: "#faf9f6",        // Warm "paper" white
-          lightgray: "#e5e5e5",    // Borders
-          gray: "#b8b8b8",         // Metadata/Dates
-          darkgray: "#4e4e4e",     // Body text
-          dark: "#2b2b2b",         // Headers
-          secondary: "#384b60",    // Links (Deep Navy)
-          tertiary: "#84a59d",     // Hover state (Sage)
+          light: "#faf9f6",
+          lightgray: "#e5e5e5",
+          gray: "#b8b8b8",
+          darkgray: "#4e4e4e",
+          dark: "#2b2b2b",
+          secondary: "#384b60",
+          tertiary: "#84a59d",
           highlight: "rgba(143, 159, 169, 0.15)",
           textHighlight: "#fff2aa",
         },
         darkMode: {
-          light: "#161617",        // Deep Charcoal
-          lightgray: "#393639",    // Borders
-          gray: "#646464",         // Metadata
-          darkgray: "#d4d4d4",     // Body text
-          dark: "#ebebec",         // Headers
-          secondary: "#7b97aa",    // Links (Steel Blue)
-          tertiary: "#84a59d",     // Hover state (Sage)
+          light: "#161617",
+          lightgray: "#393639",
+          gray: "#646464",
+          darkgray: "#d4d4d4",
+          dark: "#ebebec",
+          secondary: "#7b97aa",
+          tertiary: "#84a59d",
           highlight: "rgba(143, 159, 169, 0.15)",
           textHighlight: "#b3aa02",
         },
@@ -74,4 +74,20 @@ const config: QuartzConfig = {
     ],
     filters: [Plugin.RemoveDrafts()],
     emitters: [
-      Plugin.AliasRedirect
+      Plugin.AliasRedirects(),
+      Plugin.ComponentResources(),
+      Plugin.ContentPage(),
+      Plugin.FolderPage(),
+      Plugin.TagPage(),
+      Plugin.ContentIndex({
+        enableSiteMap: true,
+        enableRSS: true,
+      }),
+      Plugin.Assets(),
+      Plugin.Static(),
+      Plugin.NotFoundPage(),
+    ],
+  },
+}
+
+export default config
