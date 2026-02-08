@@ -1,5 +1,8 @@
 ---
 title: Telatum
 ---
-# Hey!
-**Navigating the turbulence.**
+
+---
+title: Telatum Home
+---
+"Testing the Archive Aesthetic."
