@@ -1,6 +1,6 @@
 ---
-title: Telatum Home
+title: Telatum
 ---
 
-# Telatum
-"Testing the Archive Aesthetic."
+# Navigating the Turbulence
+The Archive aesthetic should be visible now.
