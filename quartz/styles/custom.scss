@@ -1,3 +1,17 @@
-@use "./base.scss";
+footer {
+  // This removes the "Created with Quartz" text and the horizontal line
+  p, hr {
+    display: none !important;
+  }
 
-// put your custom CSS here!
+  // This adds back your own custom branding "Telatum"
+  &::after {
+    content: "© 2026 Telatum";
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+    font-family: var(--headerFont);
+    color: var(--darkgray);
+    font-size: 0.8rem;
+  }
+}
